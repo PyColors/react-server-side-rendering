@@ -1,0 +1,40 @@
+{
+  "name": "react-server-side-rendering",
+  "version": "1.0.0",
+  "description": "React server side rendering",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass src/scss/index.scss src/index.css",
+    "start": "babel-node --presets es2015 ./src/server",
+    "build-scss": "npm-run-all -p build-css watch-css",
+    "watch-css": "node-sass src/scss/index.scss src/index.css --watch"    
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "style-loader": "^0.13.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.6.0",
+    "nodemon": "^1.15.1",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0",
+    "css-loader": "^0.24.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "node-sass": "4.6.0",
+    "npm-run-all": "4.1.2",
+    "prop-types": "15.6.0",
+    "body-parser": "^1.15.2"
+  }
+}
