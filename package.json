@@ -8,7 +8,7 @@
     "build-css": "node-sass src/scss/index.scss src/index.css",
     "start": "babel-node --presets es2015 ./src/server",
     "build-scss": "npm-run-all -p build-css watch-css",
-    "watch-css": "node-sass src/scss/index.scss src/index.css --watch"    
+    "watch-css": "node-sass src/scss/index.scss src/index.css --watch"
   },
   "repository": {
     "type": "git"
